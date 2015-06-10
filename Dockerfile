@@ -1,7 +1,7 @@
-FROM dgraziotin/lamp:latest
-MAINTAINER Erick Wasambo <erickwasambo@gmail.com>
+FROM phusion/baseimage:latest
+MAINTAINER Daniel Graziotin <daniel@ineed.coffee>
 
-# based on tutumcloud/tutum-docker-lamp https://registry.hub.docker.com/u/phusion/baseimage/
+# based on tutumcloud/tutum-docker-lamp
 # MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 
 ENV DOCKER_USER_ID 501 
@@ -54,10 +54,8 @@ ENV MYSQL_PASS:-$(pwgen -s 12 1)
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
-# Configure /app folder with africachronicles app
+# Configure /app folder with sample app
 RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
-# Clone africanchronicles repo into app
-RUN git clone https://github.com/erwasambo/africachronicles.git /app
 ADD app/ /app
 
 #Environment variables to configure php
