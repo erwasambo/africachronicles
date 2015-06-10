@@ -1,5 +1,5 @@
 FROM phusion/baseimage:latest
-MAINTAINER Daniel Graziotin <daniel@ineed.coffee>
+MAINTAINER Erick Wasambo <erickwasambo@gmail.com>
 
 # based on tutumcloud/tutum-docker-lamp
 # MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
@@ -29,8 +29,8 @@ RUN apt-get update && \
 run php5enmod mcrypt
 
 # Add image configuration and scripts
-ADD start-apache2.sh /start-apache2.sh
 ADD start-mysqld.sh /start-mysqld.sh
+ADD start-apache2.sh /start-apache2.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 ADD supervisord-apache2.conf /etc/supervisor/conf.d/supervisord-apache2.conf
@@ -54,8 +54,10 @@ ENV MYSQL_PASS:-$(pwgen -s 12 1)
 ADD apache_default /etc/apache2/sites-available/000-default.conf
 RUN a2enmod rewrite
 
-# Configure /app folder with sample app
+# Configure /app folder with africachronicles app
 RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
+# Clone africanchronicles repo into app
+RUN git clone https://github.com/erwasambo/africachronicles.git /app
 ADD app/ /app
 
 #Environment variables to configure php
