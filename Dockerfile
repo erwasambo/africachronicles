@@ -57,7 +57,7 @@ RUN a2enmod rewrite
 # Configure /app folder with africachronicles app
 RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
 # Clone africanchronicles repo into app
-RUN git clone https://github.com/erwasambo/africachronicles.git /app
+#THIS DOESNT APPLY RUN git clone https://github.com/erwasambo/africachronicles.git /app
 ADD app/ /app
 
 #Environment variables to configure php
