@@ -1,7 +1,7 @@
-FROM phusion/baseimage:latest
+FROM dgraziotin/lamp:latest
 MAINTAINER Erick Wasambo <erickwasambo@gmail.com>
 
-# based on tutumcloud/tutum-docker-lamp
+# based on tutumcloud/tutum-docker-lamp https://registry.hub.docker.com/u/phusion/baseimage/
 # MAINTAINER Fernando Mayo <fernando@tutum.co>, Feng Honglin <hfeng@tutum.co>
 
 ENV DOCKER_USER_ID 501 
