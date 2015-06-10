@@ -1,0 +1,29 @@
+ERROR - 2015-06-04 12:57:06 --> Severity: Warning --> mysqli::real_connect(): (42000/1049): Unknown database 'ci3-fire-starter' /vagrant/public/fire_startermain/system/database/drivers/mysqli/mysqli_driver.php 135
+ERROR - 2015-06-04 12:57:06 --> Unable to connect to the database
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input username"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input first_name"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input last_name"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input email"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input password"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users input password_repeat"
+ERROR - 2015-06-04 14:00:01 --> Severity: Notice --> Undefined variable: password_required /vagrant/public/fire_startermain/htdocs/themes/default/template.php 221
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users help passwords"
+ERROR - 2015-06-04 14:00:01 --> Could not find the language line "users button register"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input username"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input first_name"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input last_name"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input email"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input password"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users input password_repeat"
+ERROR - 2015-06-04 14:00:15 --> Severity: Notice --> Undefined variable: password_required /vagrant/public/fire_startermain/htdocs/themes/default/template.php 221
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users help passwords"
+ERROR - 2015-06-04 14:00:15 --> Could not find the language line "users button register"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input username"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input first_name"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input last_name"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input email"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input password"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users input password_repeat"
+ERROR - 2015-06-04 14:00:18 --> Severity: Notice --> Undefined variable: password_required /vagrant/public/fire_startermain/htdocs/themes/default/template.php 221
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users help passwords"
+ERROR - 2015-06-04 14:00:18 --> Could not find the language line "users button register"
