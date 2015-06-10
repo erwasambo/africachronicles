@@ -30,7 +30,7 @@ run php5enmod mcrypt
 
 # Add image configuration and scripts
 ADD start-mysqld.sh /start-mysqld.sh
-#ADD start-apache2.sh /start-apache2.sh
+ADD start-apache2.sh /start-apache2.sh
 ADD run.sh /run.sh
 RUN chmod 755 /*.sh
 ADD supervisord-apache2.conf /etc/supervisor/conf.d/supervisord-apache2.conf
