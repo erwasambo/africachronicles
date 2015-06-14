@@ -64,7 +64,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '162.248.8.197:49161',
+	'hostname' => 'db.africachronicles.com',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'chroniclesdb',
