@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost:8889/fire_startermain/htdocs/';
+$config['base_url'] = 'http://africachronicles.com/html/htdocs/';
 
 /*
 |--------------------------------------------------------------------------

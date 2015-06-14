@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'vagrant',
-	'password' => 'vagrant',
-	'database' => 'ci3-fire-starter',
+	'hostname' => '162.248.8.197:49161',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'chroniclesdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
