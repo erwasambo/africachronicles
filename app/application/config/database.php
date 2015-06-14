@@ -58,17 +58,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
-$hostIP = $_SERVER['SERVER_ADDR'];
-(string)$hostname = gethostbyaddr($hostIP);
 
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $hostname,
+	'hostname' => 'db.africachronicles.com',
 	'username' => 'root',
-	'password' => 'lxit',
+	'password' => '',
 	'database' => 'chroniclesdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
