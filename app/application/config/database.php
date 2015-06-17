@@ -65,6 +65,7 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => '162.248.143.195',
+	'port' => '3306',
 	'username' => 'vagrant',
 	'password' => 'vagrant',
 	'database' => 'chroniclesdb',
